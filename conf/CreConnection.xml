@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<!-- 
+http://otndnld.oracle.co.jp/document/products/oracle10g/101/doc_v12/win.101/B15519-01/featConnecting.htm#i1006393
+
+DataSource:
+  接続先のデータベースを識別するOracle Netサービス名
+UserId:
+  Oracleユーザー名
+Password:
+  User Idで指定されたユーザーのパスワード
+Pooling:
+  接続プーリングを有効または無効にします。 プールは、属性値一致アルゴリズムによって作成されます。 
+  これは、接続文字列内のスペースの数のみ異なる接続文字列は同一プールを使用することを表しています。 
+  この属性は、TRUE、FALSEのいずれかに設定してください。 この属性のデフォルト値は、TRUEです。
+ConnectionLifetime:
+  接続の最大存続期間（秒）。 この属性は、接続の最大存続期間を秒数で指定します。 Connectionが 
+  プールに戻される前に、接続の存続期間がチェックされます。 接続の存続期間がこのプロパティ値を超えると、
+  接続がクローズし廃棄されます。 このプロパティ値が0（ゼロ）の場合、接続の存続期間のチェックは行われません。 
+  存続期間を超えた接続のクローズと廃棄は行いません。この処理を行うと、プール内の接続数がMin Pool Size以下になります。 
+  この属性のデフォルト値は、0（ゼロ）です。
+ConnectionTimeout:
+  プール接続が空くまで待機する最大時間（秒数）。この属性は、接続タイムアウトを秒数で指定します。この属性値は、
+  接続プール・リクエストについてのみ有効です。新規接続リクエストでは有効になりません。 この属性のデフォルト値は、15です。
+MaxPoolSize:
+  この属性は、OracleConnectionで使用する特定のプールで許可される接続の最大数を指定します。 接続文字列内でこの属性を変更しても、
+  既存のプールについての Max Pool Size制限は変更されず、 異なる Max Pool Size制限を持つ新しいプールが作成されます。 
+  この属性には、Min Pool Sizeより大きい値を設定する必要があります。 この値は、Poolingがオンにならないかぎり、無視されます。 
+  この属性のデフォルト値は、100です。
+MinPoolSize:
+  この属性は、プールの存続期間全体を通して保持する接続の最小数を指定します。 接続文字列内でこの属性を変更しても、
+  既存のプールについての Min Pool Size制限は変更されず、 異なるMin Pool Size制限を持つ新しいプールが作成されます。 
+  この値は、Poolingがオンにならないかぎり、無視されます。 この属性のデフォルト値は、1です。
+DecrPoolSize:
+  確立されているが使用されていない接続の数が多すぎる場合にクローズされる接続の数を制御します。
+IncrPoolSize:
+  プール内のすべての接続が使用されている場合に確立される接続の数を制御します。
+StatementCachePurge:
+  接続がプールに戻るときの文キャッシュの消去。
+StatementCacheSize:
+  文キャッシングの有効化と、キャッシュ・サイズ、つまりキャッシュ可能な文の最大数の設定。
+DBAPrivilege:
+  管理権限: SYSDBAまたはSYSOPER。
+ValidateConnection:
+  プールから発生した接続の検証の有効化または無効化。
+Enlist:
+  分散トランザクション内にサービス・コンポーネントを自動的に登録することを可能または不可にします。
+PersistSecurityInfo:
+  接続文字列内のパスワードの取得を可能または不可にします。
+ProxyUserId:
+  管理権限: プロキシ・ユーザーのユーザー名。
+ProxyPassword:
+  プロキシ・ユーザーのパスワード。
+-->
+<!-- コモンレールDB接続情報 -->
+<DBConnSetting name="CRE">
+	<!--本番環境 -->
+	<DBConn name="Release">
+		<DataSource value="CREH" />
+		<UserId value="A56Z" />
+		<Password value="A56Z" />
+		<Pooling value="true" />
+		<ConnectionLifetime value="0" />
+		<ConnectionTimeout value="15" />
+		<MaxPoolSize value="100" />
+		<MinPoolSize value="1" />
+		<DecrPoolSize value="1" />
+		<IncrPoolSize value="5" />
+		<StatementCachePurge value="False" />
+		<StatementCacheSize value="0" />
+		<DBAPrivilege value="" />
+		<ValidateConnection value="False" />
+		<Enlist value="True" />
+		<PersistSecurityInfo value="False" />
+		<ProxyUserId value="" />
+		<ProxyPassword value="" />
+	</DBConn>
+	<DBConn name="Test">
+		<DataSource value="TKYORCL" />
+		<UserId value="TKY1" />
+		<Password value="tKY1" />
+		<Pooling value="true" />
+		<ConnectionLifetime value="0" />
+		<ConnectionTimeout value="15" />
+		<MaxPoolSize value="100" />
+		<MinPoolSize value="1" />
+		<DecrPoolSize value="1" />
+		<IncrPoolSize value="5" />
+		<StatementCachePurge value="False" />
+		<StatementCacheSize value="0" />
+		<DBAPrivilege value="" />
+		<ValidateConnection value="False" />
+		<Enlist value="True" />
+		<PersistSecurityInfo value="False" />
+		<ProxyUserId value="" />
+		<ProxyPassword value="" />
+	</DBConn>
+</DBConnSetting>

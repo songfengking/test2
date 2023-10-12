@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+  アプリケーション個別設定情報
+  ・メール設定およびFTP設定
+-->
+<config name="PRIN_N_SI_MasterMaintenance">
+  <!-- メール送信情報 -->
+  <category name="MailSetting">
+    <!-- 正常終了通知メール送信情報 -->
+    <section name="success">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理結果報告" />
+      <key name="group" value="icr" />
+    </section>
+    <!-- 異常終了通知メール送信情報(例外による異常終了を除く) -->
+    <section name="error">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理エラー報告" />
+      <key name="group" value="icr" />
+    </section>
+    <!-- 例外通知メール送信情報 -->
+    <section name="exception">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理例外報告" />
+      <key name="group" value="icr" />
+    </section>
+
+    <!-- ピッキング再作成 予約連絡 -->
+    <section name="prin_tractor_reserve">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="予約連絡_トラクタ" />
+      <key name="group" value="Pick_Tractor" />
+    </section>
+    <section name="prin_engine_reserve">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="予約連絡_" />
+      <key name="group" value="Pick_Engine" />
+    </section>
+    <!-- ピッキング再作成 キャンセル連絡 -->
+    <section name="prin_tractor_cancel">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="キャンセル連絡_トラクタ" />
+      <key name="group" value="Pick_Tractor" />
+    </section>
+    <section name="prin_engine_cancel">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="キャンセル連絡_" />
+      <key name="group" value="Pick_Engine" />
+    </section>
+
+  </category>
+
+  <!-- FTP使用情報 -->
+  <category name="FtpSetting">
+    <section name="Settings">
+      <!-- FTP接続有無 True:する False:しない  -->
+      <key name="mode" value="False" />
+      <!-- FTP接続先 -->
+      <key name="connectTo" value="KET-01" />
+    </section>
+  </category>
+</config>

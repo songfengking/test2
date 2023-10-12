@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<!--
+  送信先情報
+    categoryタグ
+      name="MailSuccess" : 処理正常終了時送信先情報
+      name="MailError"   : 処理異常終了時送信先情報(例外による異常終了を除く)
+                           ※例外による異常終了のメール送信設定はMailSetting.xmlに記述します
+    sectionタグ
+      name  : セクション内で一意に特定できる任意の文字列
+      group : ロジック内で指定する送信先グループ名
+              同一グループ名で複数セクションを指定すると、複数アドレスに送信することができます
+    keyタグ
+      name="name" : メーラに表示される送信者名
+      name="addr" : 送信先メールアドレス
+-->
+<!-- メール設定情報 -->
+<config name="MailSetting">
+  <!-- 共通情報 -->
+  <category name="Common">
+    <!-- ホスト -->
+    <section name="Host">
+      <key name="addr" value="relay.sys.kubota.co.jp" />
+    </section>
+    <!-- 送信元 -->
+    <section name="From">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+      <key name="name" value="ICR(電算室)" />
+    </section>
+  </category>
+
+  <!-- メールグループ -->
+  <category name="MailGroup">
+    <section name="icr">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+    </section>
+    <section name="system-dev">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+    </section>
+    <section name="system-hozen">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+    </section>
+
+    <!-- ピッキング再作成 連絡先 -->
+    <section name="Pick_Tractor">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+    </section>
+    <section name="Pick_Engine">
+      <key name="addr" value="kbt_g.tu.icr@kubota.com" />
+    </section>
+
+    <section name="kksc">
+      <key name="addr" value="masato.kurokawa@kubota.com" />
+      <key name="addr" value="ikuya.uno@kubota.com" />
+      <key name="addr" value="hideyuki.kikuchi@kubota.com" />
+    </section>
+  </category>
+</config>

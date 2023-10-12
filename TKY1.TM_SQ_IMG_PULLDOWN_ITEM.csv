@@ -1,0 +1,6 @@
+"PULLDOWN_TYPE","PULLDOWN_ITEM_CD","PULLDOWN_ITEM_NM","FREE_ITEM_01","FREE_ITEM_02","FREE_ITEM_03","FREE_ITEM_04","FREE_ITEM_05","FREE_ITEM_06","FREE_ITEM_07","FREE_ITEM_08","FREE_ITEM_09","CREATE_DT","CREATE_BY","CREATE_PG","UPDATE_DT","UPDATE_BY","UPDATE_PG"
+"1","0000000001","誤欠品",,,,,,,,,,2023/07/21 15:49:25,"hand","hand",2023/07/21 15:49:47,"hand","hand"
+"2","1","誤検知","1",,,,,,,,,2023/07/21 15:50:45,"hand","hand",2023/07/21 15:50:57,"hand","hand"
+"2","2","テストタイプ","2",,,,,,,,,2023/07/21 15:52:49,"hand","hand",2023/07/21 15:52:57,"hand","hand"
+"3","1","Vision Edition","1","2","1","2","2","2",,,,,,,,,
+"3","2","Vidi","3","3","3","3","1","1","1",,,,,,,,

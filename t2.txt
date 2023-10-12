@@ -1,0 +1,16 @@
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_PULLDOWN_ITEM') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_PC_IMAGE_ARCHIVE_MANAGE') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'MS_STATION') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_CC_LINE') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'MS_SETUBI_TEIGI') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TT_SQ_IMG_ANL_RESULT') FROM dual;
+SELECT dbms_metadata.get_ddl('VIEW', 'VM_CC_PRODUCT_MODEL') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TT_PC_IMAGE_STRAGE_BY_WORK') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_ANL_ITEM') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_ANL_ASY') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_CC_AUTH_USER') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_ANL_GROUP') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'MS_SETUBI_JYOHO') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_ANL_ITEM') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_CC_MODEL_COUNTRY') FROM dual;
+SELECT dbms_metadata.get_ddl('TABLE', 'TM_SQ_IMG_ANL_ITEM') FROM dual;

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+  アプリケーション個別設定情報
+  ・メール設定およびFTP設定
+-->
+<config name="MPS_N_K_Planner">
+  <!-- メール送信情報 -->
+  <category name="MailSetting">
+    <!-- 正常終了通知メール送信情報 -->
+    <section name="success">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理結果報告" />
+      <key name="group" value="icr" />
+    </section>
+    <!-- 異常終了通知メール送信情報(例外による異常終了を除く) -->
+    <section name="error">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理エラー報告" />
+      <key name="group" value="icr" />
+    </section>
+    <!-- 例外通知メール送信情報 -->
+    <section name="exception">
+      <key name="send" value="False" /><!-- メール送信設定 True or False -->
+      <key name="subject" value="処理例外報告" />
+      <key name="group" value="icr" />
+    </section>
+  </category>
+</config>
